@@ -107,6 +107,7 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     color:#e2e3ed;
+    text-align: left;
     }
 
    ul, ol{
@@ -122,24 +123,18 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75em;
     font-weight: 500;
+    margin: 0;
    }
 
-   h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4em;
-    color: #e2e3ed;
-    font-weight: 500;
-   }
-
-   h4{
-    font-family: 'Poppins', sans-serif;
-    color: #e2e3ed; 
-    font-size: 1.2em;
-    font-weight: 500;
-   }
+   h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
 
    p{
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-size: .875em;
    }
 
@@ -153,16 +148,12 @@ figure{
 
    address{
     font-style: normal;
-    text-align: center;
-   }
+    }
 
 .content-wrapper{
     width: 90%;
     margin: 50px 0;
 }
-
-
-
 
 /*----- BASE HEADER - FOOTER STYLES -----*/
 
@@ -224,45 +215,47 @@ header nav ul li{
     font-size: 1.125em;
 }
 
-footer{
-    flex-direction: column;
+footer {
     text-align: center;
-}
-
-footer p{
+    flex-direction: column;
+  }
+  
+  footer p {
     margin: 0;
-}
-
-footer .content-wrapper{
+  }
+  
+  footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
-}
-
-footer .contact{
+  }
+  
+  footer .contact {
     margin-bottom: 50px;
 }
 
-footer .social-icons{
+  footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-footer .social{
+  }
+  
+  footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
 
-footer .social-icons p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .copyright{
+  footer .social-icons p i {
+    font-size: 1.4em;
+  }
+  
+  footer .copyright {
     margin: 20px 0;
-}
+  }
 
 /*---------- MOBILE STYLES -- HOMEPAGE ----------*/
 
@@ -281,7 +274,7 @@ footer .copyright{
 }
 
 .hero-area h1{
-    font-size: 2.15 em;
+    font-size: 2.25em;
   }
 
 /*--- Aside --- */
@@ -331,53 +324,64 @@ aside h3{
     background-position: center;
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
-}
-
-.features h2{
-    margin-bottom: 60px;
-}
-
-.features article{
-    width: 55%;
-    margin: 30px 0;
-}
-.features .features-items{
-    display: flex;
-    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
-.features p{
-    margin: 0;
-    color: #e2e3ed;
+.features h2{
+    margin-bottom: 50px;
 }
 
-/*--- Reviews --- */
+.features article{
+    width: 75%;
+    margin: 25px 0;
+}
 
-.reviews{
+.features .features-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.features-item-description{
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.features i{
+    margin-bottom: 10px;
+}
+
+.features p {
+    text-align: center;
+    margin: 0;
+  }
+  
+
+/*--- Reviews --- */
+.reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-color: #2a423a;
-}
-
-.reviews h2{
+  }
+  
+  .reviews h2 {
     margin-bottom: 40px;
-    font-weight: 200;
     line-height: 1;
-}
-.reviews h3{
-    width: 75%;
+  }
+  
+  .reviews h3 {
+    width: 55%;
     margin: 20px 0;
-    font-weight: 200;
-}
+  }
 
-.reviews p{
-    color:#e2e3ed;
-    font-weight: 100;
-}
 
 
 /*----- ABOUT PAGE SPECIFIC STYLES -----*/
@@ -701,7 +705,6 @@ aside h3{
     width: 100%;
 }
 
-}
 
 @media only screen and (min-width: 1200px){
     
