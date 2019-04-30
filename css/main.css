@@ -213,6 +213,8 @@ header nav ul{
 
 header nav ul li{
     font-size: 1.125em;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer {
@@ -255,13 +257,14 @@ footer {
   
   footer .copyright{
     margin: 20px 0;
-    
   }
 
 /*---------- MOBILE STYLES -- HOMEPAGE ----------*/
 
 /*--- Hero Area --- */
-
+.header-divider{
+    display: none;
+  }
 
 .hero-area {
     background: url('../img/hero-area-photo.jpg');
@@ -331,6 +334,7 @@ aside h3{
 
 .features h2{
     margin-bottom: 50px;
+    font-size: 2em;
 }
 
 .features article{
@@ -374,7 +378,7 @@ aside h3{
   }
   
   .reviews h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     line-height: 1;
   }
   
@@ -393,7 +397,7 @@ aside h3{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: #2a423a;
+    background-color: #527158;
 }
 
 .contact-information{
@@ -412,7 +416,6 @@ aside h3{
     position: relative;
   }
   
-
 .map iframe{
     position: absolute;
     top: 0;
@@ -420,10 +423,14 @@ aside h3{
     width: 100%;
     height: 100%;
 }
-
+.contact-information {
+    display: none;
+  }
 .contact-content p{
     margin: 0;
 }
+
+
 
 /*----- FAQ PAGE SPECIFIC STYLES -----*/
 
