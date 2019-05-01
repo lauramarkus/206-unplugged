@@ -317,7 +317,7 @@ input[type=button] {
 
 aside h3{
     font-weight: 200;
-    font-size: 1.095em
+    font-size: 1.095em;
 }
 
 /*--- Features --- */
@@ -424,6 +424,7 @@ aside h3{
 .contact-information {
     display: none;
   }
+
 .contact-content p{
     margin: 0;
 }
@@ -548,33 +549,32 @@ aside h3{
 
 @media only screen and (min-width:768px) {
     /*TABLET STYLES HERE*/
-    .content-wrapper{
-        max-width: 640px;
-        margin: 100px 0
-    }
-
+    
+      /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+/***HEADER***/
     header{
         justify-content: space-around;
+    }
+
+    header .content-wrapper{
+        width: 100%;
+        justify-content: space-between;
     }
 
     header figure{
         width: 30%;
     }
 
-    header .content-wrapper{
-        width: 100%;
-        justify-content: flex-start;
-    }
-
     header nav{
-        width: 30%;
-        padding-left: 80px; 
-        padding-right: 20px;
+        width: 20%;
     }
     
     header nav ul{
         justify-content: space-between;
-        padding-left: 550px;
     }
 
     .header-divider{
@@ -699,7 +699,8 @@ aside h3{
     }
 
     .mission-content p {
-    width: 50%;
+    width: 45%;
+    padding-top: 20px;
     }
 
     .contact-information, .content-wrapper h2 {
@@ -708,23 +709,53 @@ aside h3{
 
     .contact-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     }
 
     /***** FAQ PAGE *****/
-    .faq-content-wrapper {
-    justify-content: space-between;
-    }
-
-    .faq-content {
-    flex-basis: 40%;
-    }
-
-    .faq h2 {
-    width: 100%;
-    }
-}
+    header {
+        width: 100%;
+        padding-right: 50px;
+  
+      }
+      .faq{
+          background-color:#527158;
+          width: 100%;
+        padding-right: 50px;
+  
+          }
+    
+   
+        .faq 
+        .content-wrapper {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+  
+        }
+        
+        .faq-content {
+            flex-basis: 40%;
+        }
+        
+        .faq h2 {
+            width: 100%;
+        }
+        
+        .faq h4,
+        .faq p {
+              line-height: 1.125;
+              margin: 0;
+              padding-top: 20px;
+          }
+  
+    footer {
+        width: 100%;
+        padding-right: 50px;
+      }
+  }
 
 @media only screen and (min-width:1200px){
     
