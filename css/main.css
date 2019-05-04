@@ -766,6 +766,27 @@ aside h3{
         max-width: 960px;
     }
 
+    footer .contact h4{
+        font-size: 2em;
+      }
+ 
+    footer .contact p{
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+        
+    footer .social h4{
+        font-size: 2em;
+      }
+  
+      footer .social-icons p i{
+        font-size: 1.75em;
+      }
+  
+    h2{
+        font-size: 2.25em;
+    }
+
     .hero-area h1{
         width: 60%;
     }
@@ -787,14 +808,37 @@ aside h3{
         flex-basis: 33%;
     }
 
+    .features-item-description{
+        font-size: 1.2em;
+      }
+  
+
     .reviews article div{
         width:50%; 
     }
+
+    .reviews figure h3{
+        font-size: 1.75em
+      }
+
+    .reviews article p{
+        font-size: 1.25em
+      }
+
+    .reviews figure img{
+        padding-bottom: 20px
+      } 
+  
 
     /*** Desktop About Page***/
     .mission h2,
     .contact-section .content-wrapper h2 {
         width: 100%;
+    }
+
+    .mission-content p{
+        font-size: 1.175em;
+        line-height: 1.4em;
     }
 
     .map-container{
@@ -803,18 +847,31 @@ aside h3{
         height: 0;
         overflow: hidden;
     }
+
+    .map figure {
+        padding-bottom: 40%;
+    }
+
     .contact-section .content-wrapper h2 {
         margin-bottom: 40px;
     }
 
-    /**** Desktop FAQ page****/
+    /*********Desktop FAQ page*********/
 
     .faq h2 {
         width: 100%;
     }
  
     .faq-content {
-        flex-basis: 40%;
+        flex-basis: 35%;
+    }
+
+    .faq-content h4 {
+        font-size: 1.35em;
+    }
+  
+      .faq-content p{
+        font-size: 1.0em;
     }
 }
 
