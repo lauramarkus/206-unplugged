@@ -316,8 +316,12 @@ input[type=button] {
   }
 
 aside h3{
-    font-weight: 200;
+    font-weight: bold;
     font-size: 1.095em;
+}
+
+aside p{
+    font-size: 1.075em
 }
 
 /*--- Features --- */
@@ -435,6 +439,7 @@ aside h3{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 .faq-content-wrapper{
     display: flex;
@@ -450,16 +455,17 @@ aside h3{
 
 .faq-content{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
     margin-bottom: 50px;
+    padding-left: 10px;
 }
 
 .faq h2{
     margin-bottom: 40px;
+    padding-left: 10px;
 }
-
 
 /* ==========================================================================
    Helper classes
