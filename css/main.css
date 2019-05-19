@@ -269,7 +269,6 @@ footer {
 .hero-area {
     background: url('../img/hero-area-photo.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     min-height: 500px;
     display: flex;
@@ -557,6 +556,15 @@ aside p{
     /*TABLET STYLES HERE*/
     
       /* General styles */
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
